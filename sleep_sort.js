@@ -1,4 +1,4 @@
-import generateArray from './generate_array.mjs'
+import generateRandoms from './generate_randoms.mjs'
 
 const SLEEP_MULTIPLE = 200;
 const MAX_VALUE = 50;
@@ -22,6 +22,6 @@ async function sleepSort(toSort) {
 }
 
 (async() => {
-    const result = await sleepSort(Array.from(generateArray(NUMBER_OF_ITEMS, MAX_VALUE)));
+    const result = await sleepSort(Array.from(generateRandoms(NUMBER_OF_ITEMS, MAX_VALUE)));
     console.log(...result);
 })();
